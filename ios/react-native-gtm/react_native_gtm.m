@@ -35,7 +35,7 @@ RCT_EXPORT_METHOD(openContainerWithId:(NSString *)containerId
     }
     mTagManager = [TAGManager instance];
     self.isOpeningContainer = resolve;
-    mTagManager.logger.setLogLevel(kTAGLoggerLogLevelVerbose);
+    [mTagManager.logger setLogLevel:kTAGLoggerLogLevelVerbose];
     [TAGContainerOpener openContainerWithId:containerId
                                  tagManager:mTagManager
                                    openType:kTAGOpenTypePreferFresh
