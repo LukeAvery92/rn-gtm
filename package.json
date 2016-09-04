@@ -1,0 +1,76 @@
+{
+  "_args": [
+    [
+      "react-native-gtm",
+      "/Users/dubit/Projects/mbc3_app_hub"
+    ]
+  ],
+  "_from": "react-native-gtm@latest",
+  "_id": "react-native-gtm@0.1.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/react-native-gtm",
+  "_nodeVersion": "4.1.1",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/react-native-gtm-0.1.1.tgz_1470281047828_0.40754123078659177"
+  },
+  "_npmUser": {
+    "email": "irvingdp@gmail.com",
+    "name": "irvingdp"
+  },
+  "_npmVersion": "2.14.4",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "react-native-gtm",
+    "raw": "react-native-gtm",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-gtm/-/react-native-gtm-0.1.1.tgz",
+  "_shasum": "baacbc4860f56607ba9323053661f1cc979c9ba1",
+  "_shrinkwrap": null,
+  "_spec": "react-native-gtm",
+  "_where": "/Users/dubit/Projects/mbc3_app_hub",
+  "author": {
+    "name": "Irvingdp"
+  },
+  "dependencies": {},
+  "description": "React Native bridge for using native Google tag manager libraries on iOS and Android",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "baacbc4860f56607ba9323053661f1cc979c9ba1",
+    "tarball": "https://registry.npmjs.org/react-native-gtm/-/react-native-gtm-0.1.1.tgz"
+  },
+  "gitHead": "2b94b2a233cfa3da370ee7afc6a3a15b48c5c63a",
+  "keywords": [
+    "android",
+    "google",
+    "ios",
+    "manager",
+    "native",
+    "native",
+    "react",
+    "react-native",
+    "tag"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
+  "maintainers": [
+    {
+      "name": "irvingdp",
+      "email": "irvingdp@gmail.com"
+    }
+  ],
+  "name": "react-native-gtm",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {},
+  "version": "0.1.1"
+}
