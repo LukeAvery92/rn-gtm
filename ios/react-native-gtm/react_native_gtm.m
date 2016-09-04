@@ -3,6 +3,7 @@
 #import "TAGContainer.h"
 #import "TagContainerOpener.h"
 #import "TAGDataLayer.h"
+#import "TAGLogger.h"
 
 @interface react_native_gtm ()<TAGContainerOpenerNotifier>
 @end
