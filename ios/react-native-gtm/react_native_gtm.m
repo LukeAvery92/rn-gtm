@@ -8,7 +8,7 @@
 @end
 
 @implementation react_native_gtm {
-    
+
 }
 
 RCT_EXPORT_MODULE(ReactNativeGtm);
@@ -27,7 +27,7 @@ RCT_EXPORT_METHOD(openContainerWithId:(NSString *)containerId
         reject(@"GTM-openContainerWithId():", nil, RCTErrorWithMessage(@"The container is already open."));
         return;
     }
-    
+
     if (self.isOpeningContainer) {
         reject(@"GTM-openContainerWithId():", nil, RCTErrorWithMessage(@"The Container is opening."));
         return;
@@ -50,6 +50,19 @@ RCT_EXPORT_METHOD(push:(NSDictionary *)data
     } else {
         reject(@"GTM-push():", nil, RCTErrorWithMessage(@"The container has not be opened."));
     }
+}
+
+RCT_EXPORT_METHOD(readString:(NSString *)key
+                  resolver:(RCTPromiseResolveBlock)resolve
+                  rejecter:(RCTPromiseRejectBlock)reject)
+{
+  if (mTAGContainer != nil) {
+      NSString *title = [mTAGContainer stringForKey:key];
+      resolve(title);
+      return;
+  }
+
+  reject(@"GTM-readString():", nil, RCTErrorWithMessage(@"The container is not open."));
 }
 
 - (void)containerAvailable:(TAGContainer *)container {

@@ -68,6 +68,46 @@ public class ReactNativeGtm extends ReactContextBaseJavaModule{
         }
     }
 
+    @ReactMethod
+    public void readString(String key, final Promise promise) {
+      if (mContainerHolder != null) {
+          promise.resolve(mContainerHolder.getContainer().getString(key));
+          return;
+      }
+
+      promise.reject("GTM-readString():", new Throwable("No container open."));
+    }
+
+    @ReactMethod
+    public void readLong(String key, final Promise promise) {
+      if (mContainerHolder != null) {
+          promise.resolve(mContainerHolder.getContainer().getLong(key));
+          return;
+      }
+
+      promise.reject("GTM-readLong():", new Throwable("No container open."));
+    }
+
+    @ReactMethod
+    public void readBoolean(String key, final Promise promise) {
+      if (mContainerHolder != null) {
+          promise.resolve(mContainerHolder.getContainer().getBoolean(key));
+          return;
+      }
+
+      promise.reject("GTM-readBoolean():", new Throwable("No container open."));
+    }
+
+    @ReactMethod
+    public void readDouble(String key, final Promise promise) {
+      if (mContainerHolder != null) {
+          promise.resolve(mContainerHolder.getContainer().getDouble(key));
+          return;
+      }
+
+      promise.reject("GTM-readDouble():", new Throwable("No container open."));
+    }
+
     private static HashMap ConvertReadableMapToHashMap(ReadableMap readableMap) {
         HashMap map = new HashMap();
         ReadableMapKeySetIterator iterator = readableMap.keySetIterator();
