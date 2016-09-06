@@ -43,6 +43,7 @@ public class ReactNativeGtm extends ReactContextBaseJavaModule{
 
         mTagManager = TagManager.getInstance(getReactApplicationContext());
         isOpeningContainer = true;
+        mTagManager.setVerboseLoggingEnabled(true);
         PendingResult<ContainerHolder> pending = mTagManager.loadContainerPreferFresh(containerId, -1);
         pending.setResultCallback(new ResultCallback<ContainerHolder>() {
             @Override
